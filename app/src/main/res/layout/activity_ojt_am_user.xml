@@ -1,0 +1,2352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".ojt_am_user">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ojt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:text="On the Job Training \nArea Manager"
+                android:textColor="#333"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/materi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="29dp"
+                android:layout_below="@+id/ojt"
+                android:textSize="15dp"
+                android:text="Materi On the Job Training "
+                android:textColor="#333"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/biodata"
+                android:layout_width="337.4649dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/materi">
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Kandidat"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginLeft="17dp"
+                    android:longClickable="false"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/posisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi Pekerjaan"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="9dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/posisipekerjaan"
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_marginLeft="17dp"
+                    android:longClickable="false"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/penanggung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penanggung Jawab"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:layout_marginTop="9dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="17dp"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/jawab"
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:layout_marginLeft="17dp"
+                    android:maxLines="1"
+                    android:longClickable="false"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="337.4649dp"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/biodata">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/induction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Induction Profile \nPerusahaan, Hak &amp; Kewajiban Karyawan"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow10"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Induction Profile Perusahaan, Hak dan Kewajiban Karyawan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju10"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju10"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai10"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/snd"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/profile">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/sndtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Induction SND TVIP"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow11"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="150dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Visi &amp; Misi TVIP"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Struktur TVIP"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi/Peran SNM"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF TT &amp; IPP Depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Skema Incentive"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Jobdesk"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Area Sales/Teritorry &amp; Product Knowledge"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju11"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju11"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai11"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Depo"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/snd">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/depotext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Depo"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow12"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="160dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Struktur Depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Job desk personil depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Tour Perangkat &amp; Infrastruktur kerja Depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju12"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju12"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai12"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sopdepo"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/Depo">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/sopdepotext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SOP Depo"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow13"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="200dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (1)Pelanggan Baru"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (2)Penerimaan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (3)Pengeluaran Barang"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (4) Opname Barang"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (5) Retur Barang"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (6) Taking Order"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (7) Kanvassing"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (8) Barang Titipan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (9) Transaksi DMS"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF (10 ) 5R &amp; Safety"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju13"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju13"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai13"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/operationaldepo"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/sopdepo">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/operationaldepotext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Operasional Depo"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow14"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="160dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Gudang"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Penanganan Bongkar Muat"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Operasional-Aqua Quality Commitment"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Stock"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Administrasi Gudang"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Checking Product Keluar Masuk &amp; Penanganan BS/Afkir &amp; FIFO FEFO produk"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju14"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju14"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai14"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/preseller"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/operationaldepo">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/Preseller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preseller"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow15"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="205dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Join Visit Preseller Reguler/AFH"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Briefing &amp; SSH. Call"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Effective Call dan SOP Preseller ( Handheld )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF NOO serta targeting"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju15"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju15"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai15"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/armada"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/preseller">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/armadatext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Armada Distribusi"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow16"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="159dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan spesifikasi Armada distribusi"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Join Armada Distribusi SO, W  &amp; R serta Bedah Case/ Monitoring Ritasi Armada"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju16"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju16"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai16"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/penganansales"
+                android:layout_width="337.4649dp"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/armada">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/salestext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanganan Sales Project \n&amp; Monitoring Sales Program"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow17"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="105dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Join Visit BM penanganan program-program Principle di SO, W, Retail &amp; AHS. (Golden Zone, Planet AQUA, AR-G Zone, ASC)"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju17"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju17"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai17"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/report"
+                android:layout_width="337.4649dp"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/penganansales">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/reporttext2"
+                        android:layout_width="259dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:text="Action Plan &amp; Sales Report"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow18"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Review Action Plan &amp; Sales report Daily, Weekly,Monthly. Serta QO &amp; BOE Depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju18"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju18"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai18"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sm"
+                android:layout_width="337.4649dp"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/report">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/smtext2"
+                        android:layout_width="259dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:text="Review OJT &amp; SWOT SNM"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow19"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Review OJT &amp; SWOT SNM"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju19"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju19"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai19"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cmlinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/sm">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/cmtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi Channel SOW, AHS, Retail"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow1"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="13dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ket21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Channel"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju1"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju1"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai1"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saleslinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cmlinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/salestext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi Sales Development"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow2"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="49dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ket31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Jabatan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Prosedur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF One day join Work Departement ( as team )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju2"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju2"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai2"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/suplylinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/saleslinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/suplytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi Supply Chain"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow3"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="80dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ket41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur, Fungsi Kerja per Jabatan, Prosedur, dan QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket211"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Jabatan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Prosedur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF One day join Work Departement ( as team )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju3"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju3"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai3"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/warehouselinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/suplylinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/warehousetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi Operational Warehouse"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow4"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="26dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ket51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur, Fungsi Kerja per Jabatan, Prosedur, dan QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket311"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Jabatan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Prosedur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF One day join Work Departement ( as team )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju4"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju4"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai4"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ictlinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/warehouselinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/icttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi ICT dan Internal Audit"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow5"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="33dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ket61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur, Fungsi Kerja per Jabatan, Prosedur, dan QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket411"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Jabatan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Prosedur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF One day join Work Departement ( as team )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju5"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju5"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai5"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hrdlinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:animateLayoutChanges="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ictlinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/hrdtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi HRD"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow6"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="127dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ket71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur, Fungsi Kerja per Jabatan, Prosedur, dan QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket511"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Jabatan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Prosedur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF One day join Work Departement ( as team )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju6"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+
+                    <ImageButton
+                        android:id="@+id/tidaksetuju6"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai6"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fleetlinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:animateLayoutChanges="true"
+                android:layout_below="@id/hrdlinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/fleettext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi FLEET &amp; GA"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow7"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="87dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ket81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur, Fungsi Kerja per Jabatan, Prosedur, dan QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket611"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Pengenalan Struktur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Fungsi Kerja per Jabatan"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket83"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Prosedur"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF QO Departement"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <TextView
+                    android:id="@+id/ket85"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF One day join Work Departement ( as team )"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju7"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju7"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai7"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/financeoperationallinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:animateLayoutChanges="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/fleetlinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/financeoperationaltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengenalan Fungsi Finance Operational"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow8"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="42dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ket91"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Review Action Plan &amp; Sales report Daily, Weekly,Monthly. Serta QO &amp; BOE Depo"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju8"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju8"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai8"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reviewlinear"
+                android:layout_width="337.4649dp"
+                android:layout_height="42dp"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/financeoperationallinear">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/reviewtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Review Induction"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:layout_marginLeft="17dp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshow9"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:layout_below="@+id/linearpassword"
+                        android:background="@null"
+                        android:layout_marginLeft="165dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ket101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u25CF Review OJT &amp; SWOT SND"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan memilih SETUJU, maka anda telah melaksanakan/ \n menerima materi on the job training"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="11dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp">
+
+                    <ImageButton
+                        android:id="@+id/setuju9"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_setuju" />
+                    <ImageButton
+                        android:id="@+id/tidaksetuju9"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_tdksetuju" />
+                    <ImageButton
+                        android:id="@+id/selesai9"
+                        android:layout_width="122dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="14dp"
+                        android:visibility="gone"
+                        android:background="@null"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_selesai" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new3"
+    tools:context=".menu">
+
+
+        <com.example.eis2.RoundedLayout
+            android:layout_width="292dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.194">
+
+        <in.myinnos.imagesliderwithswipeslibrary.SliderLayout
+            android:id="@+id/image_place_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </com.example.eis2.RoundedLayout>
+
+        <TextView
+            android:id="@+id/izincount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:textSize="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002" />
+
+        <TextView
+            android:id="@+id/izinnoncount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/izincount"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002"/>
+
+
+                <TextView
+                    android:id="@+id/dinascount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.002"/>/>
+                <TextView
+                    android:id="@+id/dinasnoncount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.002"/>
+
+
+                <TextView
+                    android:id="@+id/cutitahunancount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="4dp"
+                    android:text="0"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.002"/>
+
+                <TextView
+                    android:id="@+id/cutikhususcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="34dp"
+                    android:text="0"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.002"/>
+
+            <TextView
+                android:id="@+id/txt_lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:text="lokasi"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.002"/>
+
+            <TextView
+                android:id="@+id/txt_jabatan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:text="jabatan"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.002"/>
+
+                <TextView
+                android:id="@+id/txt_jabatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_jabatan2"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:text="jabatan"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.002"/>
+
+            <TextView
+                android:id="@+id/text_jabatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_jabatan"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:text="jabatan"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.002"/>
+            <TextView
+                android:id="@+id/text_perusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_jabatan"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:text="company"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.002"
+                />
+        <TextView
+            android:id="@+id/txt_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_jabatan"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="5dp"
+            android:text="company"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002"
+            />
+        <TextView
+            android:id="@+id/txt_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_jabatan"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="5dp"
+            android:text="company"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002"
+            />
+
+        <TextView
+            android:id="@+id/jumlahcuti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="#0F4C81"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.316"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.599" />
+
+        <TextView
+            android:id="@+id/jumlahdinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#0F4C81"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.416" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028">
+
+                <ImageButton
+                    android:id="@+id/biodata"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="73dp"
+                    android:layout_gravity="center"
+                    android:layout_height="73dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_nama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeuil"
+                            android:includeFontPadding="false"
+                            android:text="Nama"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/txt_depart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:includeFontPadding="false"
+                            android:text="Department"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_nik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoeui"
+                            android:includeFontPadding="false"
+                            android:text="nik"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jumlahizin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/izincount"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:text="0"
+            android:textColor="#0F4C81"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintCircleRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.283"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.791" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4665">
+
+                <ImageButton
+                    android:id="@+id/izin"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/izin" />
+
+                <ImageButton
+                    android:id="@+id/kehadiran"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kehadiran" />
+
+                <ImageButton
+                    android:id="@+id/dinas"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dinas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.87">
+
+                <ImageButton
+                    android:id="@+id/resignbutton"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_resign"
+                    />
+
+                <ImageButton
+                    android:id="@+id/qr"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/qrcode" />
+
+                <ImageButton
+                    android:id="@+id/other"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/other" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.669">
+                <ImageButton
+                    android:id="@+id/cuti"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cuti" />
+                <ImageButton
+                    android:id="@+id/Shifting"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shifting" />
+
+                <ImageButton
+                    android:id="@+id/slipgaji"
+                    android:layout_width="89dp"
+                    android:layout_height="107dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gaji" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="307dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/panduan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.948" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter Tanggal"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81">
+
+            <EditText
+                android:id="@+id/edit_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:longClickable="false"
+                android:focusable="false"
+                android:hint="Mulai Tanggal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81">
+
+            <EditText
+                android:id="@+id/sampai_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:longClickable="false"
+                android:focusable="false"
+                android:hint="Sampai Tanggal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/squared_corner"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Batal"
+                android:textAllCaps="false"
+                android:textColor="#0F4C81"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/squared_corner"
+                android:backgroundTint="#0F4C81"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="OK"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

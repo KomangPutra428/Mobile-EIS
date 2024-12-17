@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundlist"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/produkkosongan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/line1">
+        <ImageView
+            android:id="@+id/opsi"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:src="@drawable/opsi_cdt"
+            android:layout_below="@+id/announcement"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/option"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginLeft="-330dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/internal"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Internal"
+                android:textSize="13dp" />
+
+            <RadioButton
+                android:id="@+id/eksternal"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="Eksternal"
+                android:textSize="13dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="337.4649dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.example.eis2.SearchSpinner.SearchableSpinner
+            android:id="@+id/lokasiinternal"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lokasiinternal"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/lokasiekternal"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/lokasieksternal"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/keterangan"
+            android:layout_width="337.4649dp"
+            android:layout_height="154.0463dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="5dp"
+            android:lines="5"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:paddingTop="20dp"
+            android:background="@drawable/keterangan"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_below="@id/upload"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</LinearLayout>

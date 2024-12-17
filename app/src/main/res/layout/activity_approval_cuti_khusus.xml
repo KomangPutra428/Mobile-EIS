@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".approval_cuti_khusus">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:id="@+id/flContent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/nomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginRight="-30dp"
+        android:text="0"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/approval_khusus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:text="Approval Cuti Khusus"
+            android:textColor="#333"
+            android:textStyle="bold"
+            />
+
+        <com.example.eis2.SearchSpinner.SearchableSpinner
+            android:id="@+id/jenisizin"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/approval_khusus"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/status"
+            android:hint="nama karyawan" />
+
+        <ImageButton
+            android:id="@+id/lihat"
+            android:layout_width="337.5dp"
+            android:layout_height="55.401dp"
+            android:layout_below="@+id/jenisizin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_lihat"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="337.5dp"
+            android:layout_height="450dp"
+            android:layout_below="@+id/lihat"
+            android:layout_centerHorizontal="true"
+            android:nestedScrollingEnabled="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/border"
+            />
+
+        <ImageButton
+            android:id="@+id/approvalall"
+            android:layout_width="337.5dp"
+            android:layout_height="55.401dp"
+            android:layout_below="@+id/list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_approve_all"
+            />
+    </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

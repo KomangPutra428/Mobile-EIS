@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.dailyactivityspv">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="long"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.043"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.083" />
+
+                <TextView
+                    android:id="@+id/lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="lat"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.957"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.083" />
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/absen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Daily Activity"
+                android:textColor="#333"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/draft"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/draft"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.642"
+                app:layout_constraintStart_toEndOf="@+id/absen"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="Nama"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/namaedit"
+                app:layout_constraintTop_toBottomOf="@+id/absen"
+                app:layout_constraintVertical_bias="0.034" />
+            <EditText
+                android:id="@+id/namaedit"
+                android:layout_width="315.4649dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp"
+                android:focusable="false"
+                android:fontFamily="@font/segoeuil"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nama"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/niktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="NIK"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nik"
+                app:layout_constraintTop_toBottomOf="@+id/namaedit"
+                app:layout_constraintVertical_bias="0.0" />
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="315.4649dp"
+                android:fontFamily="@font/segoeuil"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp"
+                android:foregroundGravity="center_horizontal"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/niktext"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/lokasitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="Lokasi"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nik"
+                app:layout_constraintTop_toBottomOf="@+id/nik"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/layoutchoose"
+                android:layout_width="315.4649dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:fontFamily="@font/segoeuil"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lokasitext"
+                app:layout_constraintVertical_bias="0.0" >
+
+                <ImageView
+                    android:id="@+id/opsi"
+                    android:layout_width="315.4649dp"
+                    android:layout_height="59.0463dp"
+                    android:layout_below="@+id/announcement"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/opsi_cdt" />
+
+                <RadioGroup
+                    android:id="@+id/option"
+                    android:layout_width="279dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="-50dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/internal"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Internal"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/eksternal"
+                        android:layout_width="96dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="60dp"
+                        android:text="Eksternal"
+                        android:textSize="13dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="315.4649dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.example.eis2.SearchSpinner.SearchableSpinner
+                        android:id="@+id/lokasiinternal"
+                        android:layout_width="315.4649dp"
+                        android:layout_height="59.0463dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/lokasiinternal"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/lokasiekternal"
+                        android:layout_width="315.4649dp"
+                        android:layout_height="59.0463dp"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/lokasieksternal"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keteranganlinear"
+                android:layout_width="315.4649dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="112dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/layoutchoose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/layoutchoose"
+                app:layout_constraintTop_toBottomOf="@+id/layoutchoose"
+                app:layout_constraintVertical_bias="0.0">
+                <TextView
+                    android:id="@+id/announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nik2"
+                    android:text="Keterangan Berisi Uraian Pekerjaan"
+                    android:textColor="#333"
+                    android:textSize="10dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/keterangan"
+                    android:layout_width="271dp"
+                    android:layout_height="240.6803dp"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="112dp"
+                    android:background="@null"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonPanel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/keteranganlinear"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="@+id/keteranganlinear"
+                app:layout_constraintTop_toBottomOf="@+id/keteranganlinear"
+                app:layout_constraintVertical_bias="0.62">
+
+                <Button
+                    android:id="@+id/batal"
+                    android:layout_width="170dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#D4D4D4"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/simpan"
+                    android:layout_width="170dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Tambah"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="170dp"
+                    android:visibility="gone"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="170dp"
+                    android:visibility="gone"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" >
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

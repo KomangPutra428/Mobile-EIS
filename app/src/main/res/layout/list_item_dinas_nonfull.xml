@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stretchColumns="*" >
+        <TableRow>
+            <TextView
+                android:textColor="#000000"
+                android:text="tanggal"
+                android:gravity="center"
+                android:id="@+id/tanggal_deadline"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="No.Pengajuan"
+                android:gravity="center"
+                android:id="@+id/pengajuan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Jenis Izin"
+                android:gravity="center"
+                android:id="@+id/jenis"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Tanggal Izin"
+                android:gravity="center"
+                android:id="@+id/tanggalizin"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#000000"
+                android:text="Keterangan"
+                android:id="@+id/keterangan"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#000000"
+                android:text="Status"
+                android:id="@+id/status1"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Tanggal"
+                android:id="@+id/tanggal"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Feedback"
+                android:id="@+id/feedbackatasan1"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#000000"
+                android:text="Status"
+                android:id="@+id/status2"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Tanggal"
+                android:id="@+id/tanggal2"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Feedback"
+                android:id="@+id/feedbackatasan2"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

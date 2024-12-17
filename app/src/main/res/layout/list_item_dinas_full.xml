@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/listItem"
+    android:orientation="horizontal">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stretchColumns="*" >
+        <TableRow>
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="id"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/waktu"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="waktu"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="nama"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="jenis"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="tanggal"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/karyawan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="karyawan"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/keterangan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="keterangan"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="status"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="feedback"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

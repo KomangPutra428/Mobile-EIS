@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#000000"
+        android:text="tanggal"
+        android:layout_marginLeft="4dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/tanggalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/idpengajuan"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="No. Pengajuan              "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua1"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/id"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="id pengajuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/jenis"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Jenis Absen              "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua111"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/type"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/TD"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Tanggal Absen  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua3"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/absen"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="absen"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/waktu"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="Waktu Absen       "
+            android:textStyle="bold"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua4"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/waktuabsen"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/karyawalinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Keterangan "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/titikdua5"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ket"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/status1"
+            android:layout_width="115dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Status Atasan 1           "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/titikdua9"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/approval1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/status2"
+            android:layout_width="115dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:padding="5dp"
+            android:text="Status Atasan 2           "
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/titikdua10"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/approval2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

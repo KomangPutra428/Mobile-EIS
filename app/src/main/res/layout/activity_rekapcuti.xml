@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eis2.rekapcuti">
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/tanggalawal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_below="@id/nopengajuan"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="23dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="tanggal awal"
+            android:inputType="datetime"
+            android:textColor="#000000"
+            android:selectAllOnFocus="true"
+            tools:ignore="Deprecated" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="S/D"
+            android:textSize="20dp"></TextView>
+        <EditText
+            android:id="@+id/tanggalakhir"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_marginLeft="23dp"
+            android:layout_below="@id/nopengajuan"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:hint="tanggal akhir"
+            android:focusable="false"
+            android:inputType="datetime"
+            android:textColor="#000000"
+            android:selectAllOnFocus="true"
+            tools:ignore="Deprecated" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/date"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:text = "REKAP CUTI TEAM"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:stretchColumns="*">
+    <TableRow
+        android:id="@+id/tablerow">
+
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#2adcff"
+        android:gravity="center"
+        android:text="NIK"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <TextView
+        android:textColor="#000000"
+        android:text="NAMA"
+        android:textStyle="bold"
+        android:id="@+id/nama"
+        android:background="#2adcff"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:text="Cuti Khusus"
+            android:id="@+id/jumlahcutikhusus"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#2adcff"
+            android:layout_weight="1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:text="Cuti Tahunan"
+            android:id="@+id/jumlahcutitahunan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#2adcff"
+            android:layout_weight="1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+        <ListView
+            android:id="@+id/list_team"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollingCache="false"/>
+    </TableLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

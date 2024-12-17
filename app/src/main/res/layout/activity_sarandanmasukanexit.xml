@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".sarandanmasukanexit">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- The ActionBar displayed at the top -->
+
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- The main content view where fragments are loaded -->
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/keterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final Exit Interview"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/listall"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="337dp"
+                    android:layout_centerInParent="false"
+                    android:layout_below="@id/keterangan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saran dan Masukan\n(dengan memilih maksimal 3 dan minimal 1 point dari 12 pertanyaan diatas untuk diberikan saran / masukan)" />
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="320.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:divider="@null"
+                    android:dividerHeight="4.0sp"
+                    />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/kritikan"
+                    android:layout_width="337.5dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/listall"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="337dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alasan Resign (Sesuai dengan pilihan)  :" />
+
+                            <RadioGroup
+                                android:id="@+id/alasanresignpilihan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/opsi1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mendapat Pekerjaan Baru" />
+
+                                <RadioButton
+                                    android:id="@+id/opsi2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Melanjutkan Study" />
+
+                                <RadioButton
+                                    android:id="@+id/opsi3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Berwiraswasta" />
+
+                                <RadioButton
+                                    android:id="@+id/opsi4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kesehatan" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*Tambahan :\nInterviewer menggambarkan secara detail faktor-faktor apa saja sehingga karyawan resign"/>
+
+                            <EditText
+                                android:id="@+id/tambahan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="154.6803dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="5dp"
+                                android:lines="5"
+                                android:gravity="top|start"
+                                android:inputType="textMultiLine"
+                                android:scrollHorizontally="false"
+                                android:paddingTop="20dp"
+                                android:background="@drawable/tambahan"
+                                android:paddingLeft="10dp"
+                                android:textColor="#000000"
+                                android:layout_below="@id/upload"
+                                android:layout_centerHorizontal="true"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apabila ada ketidaksesuaian ( MAJOR / MINOR)\nInterviewer gambarkan faktor pareto (Dominan) yang menyebabkan ketidaksesuaian
+"/>
+
+                            <EditText
+                                android:id="@+id/ketidaksesuaian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="154.6803dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:lines="5"
+                                android:gravity="top|start"
+                                android:inputType="textMultiLine"
+                                android:scrollHorizontally="false"
+                                android:paddingTop="20dp"
+                                android:background="@drawable/ketidaksesuaian"
+                                android:paddingLeft="10dp"
+                                android:textColor="#000000"
+                                android:layout_below="@id/upload"
+                                android:layout_centerHorizontal="true" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageButton
+                        android:id="@+id/simpankritik"
+                        android:layout_width="337.5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="55.401dp"
+                        android:background="@null"
+                        android:layout_centerHorizontal="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_simpan" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:background="@drawable/background_new3"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

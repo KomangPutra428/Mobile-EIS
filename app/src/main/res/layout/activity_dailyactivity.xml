@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.dailyactivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:id="@+id/flContent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/absen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Daily Activity"
+                android:textColor="#333"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="Nama"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/namaedit"
+                app:layout_constraintTop_toBottomOf="@+id/absen"
+                app:layout_constraintVertical_bias="0.034" />
+            <EditText
+                android:id="@+id/namaedit"
+                android:layout_width="315.4649dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp"
+                android:focusable="false"
+                android:fontFamily="@font/segoeuil"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nama"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/niktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="NIK"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nik"
+                app:layout_constraintTop_toBottomOf="@+id/namaedit"
+                app:layout_constraintVertical_bias="0.0" />
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="315.4649dp"
+                android:fontFamily="@font/segoeuil"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp"
+                android:foregroundGravity="center_horizontal"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/niktext"
+                app:layout_constraintVertical_bias="0.0" />
+
+<!--    keterangan-->
+
+    <LinearLayout
+        android:id="@+id/keteranganlinear"
+        android:layout_width="315.4649dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:scrollHorizontally="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nik"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nik"
+        app:layout_constraintTop_toBottomOf="@+id/nik"
+        app:layout_constraintVertical_bias="0.0">
+        <TextView
+            android:id="@+id/announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nik2"
+            android:text="Keterangan Berisi Uraian Pekerjaan"
+            android:textColor="#333"
+            android:textSize="10dp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/keterangan"
+            android:layout_width="271dp"
+            android:layout_height="379dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="112dp"
+            android:background="@null"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:lines="20"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:scrollHorizontally="false"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="315.4649dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#0F4C81"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        android:text="Selesai"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/keteranganlinear"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/keteranganlinear"
+        app:layout_constraintTop_toBottomOf="@+id/keteranganlinear"
+        app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Employee Information System</string>
+    <string name="kemampuan_teknis">\KEMAMPUAN TEKNIS</string>
+    <string name="teknis">Minta calon karyawan untuk menjelaskan hal-hal yang bersifat teknis sesuai dengan pendidikan dan persyaratan jabatan.</string>
+    <string name="channel_id">Test</string>
+    <string name="pengalaman">\BERPENGALAMAN</string>
+    <string name="isipengalaman">Untuk mengetahui seberapa jauh pengetahuan calon tentang pekerjaan, mintalah ia untuk memberikan gambaran kasar mengenai apa saja yang akan dikerjakan jika ia menduduki posisi tersebut, atau dengan pengalaman yang sudah ia miliki. Bagaimana ia menyelesaikan permasalahan/tugas-tugas pada posisi tersebut. Hal yang dapat dilihat adalah bagaimana proses penerapan pengalaman dan pengetahuannya dalam melaksanakan tugasnya.</string>
+
+    <string name="fresh_graduate">\FRESH GRADUATE</string>
+    <string name="isifresh_graduate">Dapat ditanyakan mengenai konsep-konsep dasar dari ilmu yang ia pelajari serta relevansinya dengan dunia pekerjaan, atau mengenai proses pengerjaan skripsi atau karya tulis (lihat dari sisi teori dan metode), atau dapat ditanyakan juga dengan bekal ilmu yang ia miliki, hal-hal apa saja (terutama yang aplikatif) yang dapat ia sumbangakan bagi perusahaan. Bisa juga ditanyakan mengenai hobby/minat calon yang relevan dengan bidang pekerjaan/posisi yang diinginkan.</string>
+
+    <string name="observasi">\OBSERVASI</string>
+    <string name="isiobservasi">Selama proses menjawab, observasi bagaiamana logika jawaban, cara menganalisa masalah, atau kreativitas/ide-ide baru dalam menjalankan tugasnya. Hal ini bisa menjadi petunjuk dan point tersendiri untuk peserta.</string>
+
+    <string name="sistematika">SISTEMATIKA KERJA</string>
+    <string name="fresh_graduate2">\ FRESH GRADUATE</string>
+    <string name="isifresh_graduate2">Tanyakan bagaimana ia membuat perencanaan tugas bisa dalam pembuatan skripsi, PKL atau pengalaman organisasi.</string>
+
+    <string name="pengalaman2">\PENGALAMAN</string>
+    <string name="isipengalaman2">Bila anda dihadapkan pada berbagai jenis pekerjaan misalnya. (Sesuai dengan problematika yang sering dihadapi dalam pekerjaan tersebut) apa yang mendasari anda untuk membuat urutan prioritas ?, mengapa demikian ?, (problem pembedaan urgent dan important).</string>
+
+    <string name="builder">\Data sudah dikirimkan ke hrd untuk \n menjadi dasar appoiment interview</string>
+
+    <string-array name="analisa">
+        <item>Karyawan Lama Mengundurkan Diri</item>
+        <item>Karyawan Lama di Promosikan</item>
+        <item>Karyawan Lama di Rotasikan</item>
+        <item>Pemenuhan Man Power Planning (MPP)</item>
+        <item>Karyawan Cuti Melahirkan *</item>
+    </string-array>
+
+    <string-array name="tipikal">
+        <item>PILIH ALASAN</item>
+        <item>Case</item>
+        <item>Non Case</item>
+
+    </string-array>
+
+    <string-array name="keterangan">
+        <item>-- Pilih Jawaban --</item>
+        <item>Sangat Buruk</item>
+        <item>Buruk</item>
+        <item>Sedang</item>
+        <item>Baik</item>
+        <item>Sangat Baik</item>
+    </string-array>
+
+    <string name="textFromRes">
+    &lt;font color="#FF0000">This is colored in red &lt;/font> This is not
+    </string>
+
+    <string-array name="absensi">
+        <item>HD</item>
+        <item>DN</item>
+        <item>SA</item>
+        <item>CD</item>
+        <item>DT</item>
+        <item>PC</item>
+        <item>TD F1</item>
+        <item>TD F4</item>
+        <item>AL</item>
+        <item>CK</item>
+    </string-array>
+
+    <string-array name="penyedia">
+        <item>Pemenuhan Eksternal (Karyawan Baru)</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Open</item>
+        <item>Approved</item>
+        <item>Not Approved</item>
+        <item>Hangus</item>
+        <item>Semua</item>
+    </string-array>
+
+    <string-array name="status_2">
+        <item>Open</item>
+        <item>Approved</item>
+        <item>Not Approved</item>
+    </string-array>
+
+
+    <string-array name="jawaban1">
+        <item>-- Pilih Keterangan --</item>
+        <item>Sangat Memahami</item>
+        <item>Memahami</item>
+        <item>Kurang Memahami</item>
+        <item>Tidak Memahami</item>
+    </string-array>
+
+    <string-array name="jawaban2">
+        <item>-- Pilih Keterangan --</item>
+        <item>Selalu</item>
+        <item>Kadang</item>
+    </string-array>
+
+    <string-array name="jawaban3">
+        <item>-- Pilih Keterangan --</item>
+        <item>Ya</item>
+        <item>Tidak</item>
+    </string-array>
+
+    <string name="message"> </string>
+
+
+</resources>

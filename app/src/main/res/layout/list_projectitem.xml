@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/listItem"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tglawal2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Tanggal Awal  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua4"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tglawal"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="tglawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tglakhir2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Tanggal Akhir  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua3"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tglakhir"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="tglakhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/nama2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Nama Karyawan  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua10"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/nama"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/nik2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="NIK Karyawan  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/nik"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lokasi2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="lokasi  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/lokasi"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

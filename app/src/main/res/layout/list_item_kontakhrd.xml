@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/gambar_hr"
+                android:layout_width="149dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="160dp"
+                app:srcCompat="@drawable/nissa" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/hrexecutive1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/gambar_hr"
+                    android:fontFamily="@font/segoeuib"
+                    android:textSize="10dp"
+                    android:text="HR Executive 1"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/executive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/segoeuil"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="0dp"
+                    android:text="Nisa Nur Afifah"
+                    android:textColor="#333"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/area1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/gambar_hr"
+                    android:fontFamily="@font/segoeuib"
+                    android:textSize="10dp"
+                    android:text="Area"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/areahr"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/segoeuil"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="0dp"
+                    android:text="CRD, DPK, DMG, LTA, LDN, XBT, KDY, PLT, PST, CKD"
+                    android:textColor="#333"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/telepon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/gambar_hr"
+                    android:fontFamily="@font/segoeuib"
+                    android:textSize="10dp"
+                    android:text="Telepon"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/segoeuil"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="0dp"
+                    android:text="0818158724"
+                    android:textColor="#333"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/gambar_hr"
+                    android:fontFamily="@font/segoeuib"
+                    android:textSize="10dp"
+                    android:text="Scoop"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/scoop"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:fontFamily="@font/segoeuil"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="0dp"
+                    android:text="Scoop : PKWT karyawan, punishment, seragam, pendaftaran dan case BPJS Ketenagakerjaan dan BPJS Kesehatan, Dokumen administratif resign, paklaring, surat keterangan kerja, pengambilan jaminan "
+                    android:textColor="#333"
+                    android:textSize="12dp" />
+
+                <ImageButton
+                    android:id="@+id/chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@id/gambar_hr"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_chat" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

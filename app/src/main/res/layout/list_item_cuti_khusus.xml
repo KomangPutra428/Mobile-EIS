@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listItem"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#000000"
+        android:text="tanggal"
+        android:layout_marginLeft="4dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/tanggalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/idpengajuan"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="No. Pengajuan              "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua1"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/id"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="id pengajuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/jenisa"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Jenis Cuti  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua12"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/jenisCT"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="CK"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/TD"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Tanggal Cuti  "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua3"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tidakhadir"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="Tanggal Tidak Hadir"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/TE"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="Batas Approval       "
+            android:textStyle="bold"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua4"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/deadline"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="Tanggal Berakhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/karyawalinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/kondisi"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Kondisi "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/titikdua5"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/condition"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="kondisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/ket"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Keterangan                   "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/titikdua6"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/keterangan"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/feedback"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="FeedBack Atasan 1    "
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua7"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/feedback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:padding="5dp"
+            android:text="feedback1"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/feedback3"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="FeedBack Atasan 2    "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua8"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/feedback2"
+            android:textColor="#000000"
+            android:text="feedback2"
+            android:textSize="10dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/status1"
+            android:layout_width="115dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Status Atasan 1           "
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/titikdua9"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/approval1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/status2"
+            android:layout_width="115dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:padding="5dp"
+            android:text="Status Atasan 2           "
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/titikdua10"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/approval2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

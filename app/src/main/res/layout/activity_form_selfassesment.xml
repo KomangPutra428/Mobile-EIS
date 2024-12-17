@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.form_interview">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/nama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nama3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/forminterview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:text="Self Assessment Risiko COVID-19"
+                android:textColor="#333"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/constrainnote"
+                android:layout_width="337.4649dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/forminterview"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demi kesehatan dan keselamatan bersama di tempat kerja, kami mohon Bapak/Ibu untuk menjawab pertanyaan ini secara Jujur."
+                    android:textSize="12dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listsoal"
+                android:layout_width="337.5dp"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:layout_height="1600dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:divider="@null"
+                android:dividerHeight="20.0sp"
+                android:layout_below="@+id/constrainnote"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linearcheckbox"
+                android:layout_width="337.4649dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/listsoal"
+                android:orientation="vertical"
+                app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="337.4649dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/listsoal"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/keterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan" />
+                <ListView
+                    android:id="@+id/checkboxes"
+                    android:layout_width="337.5dp"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:divider="@null"
+                    android:dividerHeight="20.0sp"
+                    android:layout_below="@+id/constrainnote"
+                    />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/linearcheckbox">
+
+                <Button
+                    android:id="@+id/batal"
+                    android:layout_width="170dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#D4D4D4"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="#0F4C81"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/simpan"
+                    android:layout_width="170dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#0F4C81"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="337.4649dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

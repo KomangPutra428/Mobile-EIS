@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.history_interview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- The ActionBar displayed at the top -->
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- The main content view where fragments are loaded -->
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/absensiteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekap Hasil Wawancara"
+            android:textColor="#333"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/absensiteam"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/txt_sortir"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="tanggal"
+            android:inputType="datetime"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/tambah"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignStart="@+id/tanggal"
+            android:layout_alignLeft="@+id/tanggal"
+            android:layout_alignTop="@+id/tanggal"
+            android:layout_alignEnd="@+id/tanggal"
+            android:layout_alignRight="@+id/tanggal"
+            android:layout_alignBottom="@+id/tanggal"
+            android:layout_marginStart="294dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_tambah" />
+
+        <EditText
+            android:id="@+id/tanggalakhir"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tanggal"
+            android:background="@drawable/field_sampaitanggal"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="tanggal"
+            android:inputType="datetime"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageButton
+            android:id="@+id/hapus"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:visibility="gone"
+            android:layout_alignStart="@+id/tanggalakhir"
+            android:layout_alignLeft="@+id/tanggalakhir"
+            android:layout_alignTop="@+id/tanggalakhir"
+            android:layout_alignEnd="@+id/tanggalakhir"
+            android:layout_alignRight="@+id/tanggalakhir"
+            android:layout_alignBottom="@+id/tanggalakhir"
+            android:layout_marginStart="294dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_erase" />
+
+        <com.example.eis2.SearchSpinner.SearchableSpinner
+            android:id="@+id/jenisizin"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/tanggalakhir"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/status"
+            android:hint="nama karyawan" />
+
+        <ImageButton
+            android:id="@+id/lihat"
+            android:layout_width="337.5dp"
+            android:layout_height="55.401dp"
+            android:layout_below="@+id/jenisizin"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_lihat"
+            />
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="337.5dp"
+            android:layout_height="645dp"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@+id/lihat"
+            />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

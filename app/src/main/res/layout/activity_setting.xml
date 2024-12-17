@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_setting"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".setting">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#0F4C81"
+                app:navigationIcon="@drawable/navigasi"
+                android:layout_height="56dp"
+                app:title="Profil"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="#0F4C81">
+
+                <EditText
+                    android:id="@+id/editPasswordLama"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textPassword"
+                    android:hint="Password Lama"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="#0F4C81">
+
+                <EditText
+                    android:id="@+id/editPasswordBaru"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textPassword"
+                    android:hint="Password Baru"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="#0F4C81">
+
+                <EditText
+                    android:id="@+id/ConfirmPasswordBaru"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textPassword"
+                    android:hint="Konfirmasi Password"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearbutton"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:cardElevation="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:background="#ffffff"
+                    android:padding="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/batal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:text="Kembali"
+                        android:textAllCaps="false"
+                        android:textColor="#0F4C81"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/simpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#0F4C81"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:text="Simpan"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

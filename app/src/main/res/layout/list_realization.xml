@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listItem"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/jam_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan"/>
+            <TextView
+                android:id="@+id/plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/note"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        app:strokeColor="#B9EED0"
+        app:strokeWidth="2dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:id="@+id/result_linear"
+            android:background="#E8FFF2"
+            android:layout_width="wrap_content"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/reply"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/jam_result"
+                        android:textColor="#0F4C81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Result"/>
+                    <TextView
+                        android:id="@+id/result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#0F4C81"
+                        android:text=""/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pengganti_pekerjaan_layout"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/reply"/>
+                <LinearLayout
+                    android:id="@+id/pengganti_layout"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="#0F4C81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aktivitas Pengganti : "/>
+                    <TextView
+                        android:id="@+id/pengganti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#0F4C81"
+                        android:text=""/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/work_history"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0F4C81"
+                        android:text="Status Realisasi"/>
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.Dialog"
+                    android:outlineAmbientShadowColor="@color/blue"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#B9EED0"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:background="#E8FFF2"
+                        android:textColor="#2ECC71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ya"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</LinearLayout>

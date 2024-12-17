@@ -1,0 +1,169 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/listItem"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="#000000"
+        android:text="tanggal"
+        android:textSize="15dp"
+        android:layout_marginLeft="4dp"
+        android:textStyle="bold"
+        android:id="@+id/tanggal_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/nikbaru"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="NIK Baru               "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua1"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/nik"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="nik"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/keperluan"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Keperluan         "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/perlu"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="perlu"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lokasi2"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Analisa Keterangan                             "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua3"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/analisa"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="analis"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/statusatasan"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Status Atasan                     "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua4"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/approvalatasan"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/statushrd"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Status HRD                     "
+            android:textSize="10dp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/titikdua5"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/approvalhrd"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Activity"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81">
+
+            <EditText
+                android:id="@+id/edit_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:longClickable="false"
+                android:focusable="false"
+                android:hint="Lokasi"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/typeLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            app:endIconMode="dropdown_menu">
+
+            <AutoCompleteTextView
+                android:id="@+id/pilih_type"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:longClickable="false"
+                android:focusable="false"
+                android:hint="Type Customer"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/depoLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            app:endIconMode="dropdown_menu">
+
+            <AutoCompleteTextView
+                android:id="@+id/pilih_depo"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:longClickable="false"
+                android:focusable="false"
+                android:hint="Pilih Depo"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            app:endIconMode="dropdown_menu">
+
+            <AutoCompleteTextView
+                android:id="@+id/pilih_segment"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:longClickable="false"
+                android:focusable="false"
+                android:hint="Segment"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kelurahanlayout"
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            app:endIconMode="dropdown_menu">
+
+            <AutoCompleteTextView
+                android:id="@+id/pilih_kelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:hint="Kelurahan"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pilihtoko_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            app:endIconMode="dropdown_menu">
+
+            <AutoCompleteTextView
+                android:id="@+id/pilih_toko"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="top"
+                android:hint="Pilih Toko"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nilai"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81"
+            android:layout_below="@+id/pilihan">
+
+            <EditText
+                android:id="@+id/catatan"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:gravity="top"
+                android:hint="Uraian Pekerjaan"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/squared_corner"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Batal"
+                android:textAllCaps="false"
+                android:textColor="#0F4C81"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tambahkan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/squared_corner"
+                android:backgroundTint="#0F4C81"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Tambahkan"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

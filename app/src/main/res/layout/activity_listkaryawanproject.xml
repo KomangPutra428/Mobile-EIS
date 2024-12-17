@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.listkaryawanproject">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- The ActionBar displayed at the top -->
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- The main content view where fragments are loaded -->
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/absensiteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List Karyawan Project"
+            android:textColor="#333"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <SearchView
+            android:id="@+id/simpleSearchView"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cari_karyawan"
+            android:layout_below="@+id/absensiteam"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/cari"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/simpleSearchView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_cari"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="337.5dp"
+            android:layout_height="775dp"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@+id/cari"
+            />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

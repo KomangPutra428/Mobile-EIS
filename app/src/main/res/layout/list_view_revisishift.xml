@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/listItem"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="nik"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="nama"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/jabatan"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="jabatan"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/lokasi"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="lokasi"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/departement"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="departement"
+        android:textColor="#000000" />
+</LinearLayout>

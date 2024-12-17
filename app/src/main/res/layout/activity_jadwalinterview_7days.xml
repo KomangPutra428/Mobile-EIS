@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".jadwalinterview_7days">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- The ActionBar displayed at the top -->
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- The main content view where fragments are loaded -->
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/absensiteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Wawancara"
+            android:textColor="#333"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/tanggalawal"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/absensiteam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/dari_tanggal"
+            android:focusable="false"
+            android:longClickable="false"
+            android:paddingLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/tambah"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignStart="@+id/tanggalawal"
+            android:layout_alignLeft="@+id/tanggalawal"
+            android:layout_alignTop="@+id/tanggalawal"
+            android:layout_alignEnd="@+id/tanggalawal"
+            android:layout_alignRight="@+id/tanggalawal"
+            android:layout_alignBottom="@+id/tanggalawal"
+            android:layout_marginStart="294dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_tambah" />
+
+        <EditText
+            android:id="@+id/tanggalakhir"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/tanggalawal"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sampai_tanggal"
+            android:focusable="false"
+            android:longClickable="false"
+            android:paddingLeft="10dp"/>
+        <ImageButton
+            android:id="@+id/hapus"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:visibility="gone"
+            android:layout_alignStart="@+id/tanggalakhir"
+            android:layout_alignLeft="@+id/tanggalakhir"
+            android:layout_alignTop="@+id/tanggalakhir"
+            android:layout_alignEnd="@+id/tanggalakhir"
+            android:layout_alignRight="@+id/tanggalakhir"
+            android:layout_alignBottom="@+id/tanggalakhir"
+            android:layout_marginStart="294dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_erase" />
+
+        <ImageButton
+            android:id="@+id/lihat"
+            android:layout_width="337.5dp"
+            android:layout_height="55.401dp"
+            android:layout_below="@+id/tanggalakhir"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_lihat"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="337.5dp"
+            android:layout_height="645dp"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@+id/lihat"
+            />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

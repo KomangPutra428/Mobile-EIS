@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_datapendidikan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data_pendidikan">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/dl_datainduk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDF7FF"
+        tools:context=".data_induk">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/datainduk_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:elevation="8dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:background="#EDF7FF"
+                    app:titleTextColor="#0F4C81"
+                    app:navigationIcon="@drawable/navigasi"
+                    android:layout_height="56dp"
+                    app:title="Data Pendidikan"
+                    style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                    />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearbutton"
+                android:layout_below="@+id/datainduk_bar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Sekolah Dasar"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Status Sekolah"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/normalSd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Normal"/>
+                        <RadioButton
+                            android:id="@+id/paketSd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:text="Paket"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/namaSekolahSd"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Nama Sekolah"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/tahunSd"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Tahun Pendidikan"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Keterangan"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/lulusSd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lulus"/>
+                        <RadioButton
+                            android:id="@+id/tidaklulusSd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:text="Tidak Lulus"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/NilaiRataSd"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Nilai Rata-rata"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#E0E0E0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Sekolah Menengah Pertama"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Status Sekolah"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/normalSMP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Normal"/>
+                        <RadioButton
+                            android:id="@+id/paketSMP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:text="Paket"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/namaSekolahSMP"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Nama Sekolah"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/tahunSMP"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Tahun Pendidikan"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Keterangan"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/lulusSMP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lulus"/>
+                        <RadioButton
+                            android:id="@+id/tidaklulusSMP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:text="Tidak Lulus"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/NilaiRataSMP"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Nilai Rata-rata"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#E0E0E0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Sekolah Menengah Atas / Kejuruan"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Status Sekolah"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/normalSMA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Normal"/>
+                        <RadioButton
+                            android:id="@+id/paketSMA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:text="Paket"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/namaSekolahSMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Nama Sekolah"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/jurusanSMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Jurusan"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/tahunSMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Tahun Pendidikan"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Keterangan"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <RadioButton
+                            android:id="@+id/lulusSMA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lulus"/>
+                        <RadioButton
+                            android:id="@+id/tidaklulusSMA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:text="Tidak Lulus"/>
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        app:boxCornerRadiusBottomEnd="4dp"
+                        app:boxCornerRadiusBottomStart="4dp"
+                        app:boxCornerRadiusTopEnd="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:boxCornerRadiusTopStart="4dp"
+                        app:endIconMode="clear_text"
+                        app:boxStrokeColor="#0F4C81">
+
+                        <EditText
+                            android:id="@+id/NilaiRataSMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Nilai Rata-rata"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#E0E0E0"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="24dp">
+                        <TextView
+                            android:layout_width="221dp"
+                            android:layout_height="wrap_content"
+                            android:text="Universitas / Institut / Sekolah Tinggi"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/addPendidikan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            android:textColor="#0A0A0A"
+                            app:strokeColor="#E0E0E0"
+                            app:strokeWidth="2dp"
+                            android:textStyle="bold"
+                            android:text="Tambah"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginRight="15dp"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="4dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/diploma"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diploma"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:textColor="#0A0A0A"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nama Institusi"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/nama_st"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jurusan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/jurusan_st"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tahun Pendidikan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tahun_st"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Keterangan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/keterangan_st"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nilai IPK"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/ipk_st"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tingkat"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tingkat_st"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true">
+                                        <Button
+                                            android:id="@+id/hapusdiploma"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#FB4141"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Hapus"
+                                            android:layout_alignParentRight="true"/>
+                                        <Button
+                                            android:id="@+id/Updatediploma"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#0096FF"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Update"
+                                            android:layout_alignParentRight="true"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginTop="24dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:background="#E0E0E0"/>
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/s1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="14dp"
+                                    android:text="S1"
+                                    android:textColor="#0A0A0A"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nama Institusi"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/nama_s1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jurusan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/jurusan_s1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tahun Pendidikan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tahun_s1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Keterangan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/keterangan_s1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nilai IPK"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/ipk_s1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tingkat"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tingkat_s1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true">
+                                        <Button
+                                            android:id="@+id/hapuss1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#FB4141"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Hapus"
+                                            android:layout_alignParentRight="true"/>
+                                        <Button
+                                            android:id="@+id/Updates1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#0096FF"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Update"
+                                            android:layout_alignParentRight="true"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:layout_marginTop="24dp"
+                                    android:background="#E0E0E0"/>
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/s2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="14dp"
+                                    android:text="S2"
+                                    android:textColor="#0A0A0A"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nama Institusi"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/nama_s2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jurusan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/jurusan_s2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tahun Pendidikan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tahun_s2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Keterangan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/keterangan_s2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nilai IPK"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/ipk_s2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tingkat"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tingkat_s2"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true">
+                                        <Button
+                                            android:id="@+id/hapuss2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#FB4141"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Hapus"
+                                            android:layout_alignParentRight="true"/>
+                                        <Button
+                                            android:id="@+id/Updates2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#0096FF"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Update"
+                                            android:layout_alignParentRight="true"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:layout_marginTop="24dp"
+                                    android:background="#E0E0E0"/>
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/s3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="14dp"
+                                    android:text="S3"
+                                    android:textColor="#0A0A0A"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nama Institusi"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/nama_s3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jurusan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/jurusan_s3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tahun Pendidikan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tahun_s3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Keterangan"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/keterangan_s3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nilai IPK"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/ipk_s3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tingkat"
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"/>
+                                    <TextView
+                                        android:id="@+id/tingkat_s3"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textColor="#0A0A0A"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true">
+                                        <Button
+                                            android:id="@+id/hapuss3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#FB4141"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Hapus"
+                                            android:layout_alignParentRight="true"/>
+                                        <Button
+                                            android:id="@+id/Updates3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="#0096FF"
+                                            android:textColor="#FFFFFF"
+                                            android:text="Update"
+                                            android:layout_alignParentRight="true"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/linearbutton"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:cardElevation="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:background="#ffffff"
+                    android:padding="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:background="#ffffff"
+                        android:padding="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/batal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:strokeWidth="1dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:backgroundTint="#ffffff"
+                            android:scaleType="fitXY"
+                            app:strokeColor="#0F4C81"
+                            android:layout_weight="1"
+                            android:layout_marginRight="8dp"
+                            android:text="Batal"
+                            android:textAllCaps="false"
+                            android:textColor="#0F4C81"
+                            android:textStyle="bold" />
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/ubah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:strokeWidth="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:backgroundTint="#0F4C81"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:scaleType="fitXY"
+                            android:text="Ubah"
+                            android:textAllCaps="false"
+                            android:textColor="#FFF"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

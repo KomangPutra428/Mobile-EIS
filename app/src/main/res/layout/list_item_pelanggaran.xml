@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="1dp"
+        app:strokeColor="#E0E0E0"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gambar_outletkritis"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pembinaan_karyawan" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/gambar_outletkritis"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/noForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Form"
+                    android:textSize="14sp"
+                    android:layout_margin="3dp"/>
+
+                <TextView
+                    android:id="@+id/suratSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Surat Peringatan"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:padding="16dp"-->
+    <!--    android:id="@+id/listItem"-->
+    <!--    android:orientation="vertical">-->
+    <!--    <TextView-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:text="tanggal"-->
+    <!--        android:textSize="15dp"-->
+    <!--        android:layout_marginLeft="4dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:id="@+id/tanggal_2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/nikbaru"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Nomor Form                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua1"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/no"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="nomor"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/jenissanksi"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Jenis Sanksi                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua2"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/sanksi"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="sanksi"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/jenispelanggaran"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Jenis Pelanggaran                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua3"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/pelanggaran"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="pelanggaran"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/keterangantambaham"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Keterangan Tambahan                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua4"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/keterangan"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="keterangan"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tanggalefektif"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Tanggal Efektif                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua5"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/efektif"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="efektif"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tanggalberakhir"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Tanggal Berakhir                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua6"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/berakhir"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="berakhir"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/statussanksi"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="Status Sanksi                "-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="115dp"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/titikdua7"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text=":"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/sanksistatus"-->
+    <!--            android:textSize="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:text="sanksi"-->
+    <!--            android:textColor="#000000" />-->
+    <!--    </LinearLayout>-->
+    <!--</LinearLayout>-->

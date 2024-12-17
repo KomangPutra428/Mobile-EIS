@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".form_serahterima">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/approval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Approval Serah Terima"
+                android:textColor="#333"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+               />
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/approval">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NIK Baru"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nikbaru"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/namakaryawan"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jabatan Karyawan "
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/jabatan"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi Karyawan "
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/lokasi"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departement Karyawan "
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/depart"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Pengajuan "
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/tanggalpengajuan"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nik_penerima_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NIK Penerima 1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nik_penerima1"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/namapenerima1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Penerima 1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/namapenerima_1"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nik_penerima_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NIK Penerima 2"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nik_penerima2"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/namapenerima2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Penerima 2"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/namapenerima_2"
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeuil"
+                        android:includeFontPadding="false"
+                        android:longClickable="false"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6list"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/linearLayout6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Serah Terima"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="List Alat Kerja"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/buttonshowalatkerja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+
+                    <ImageButton
+                        android:id="@+id/buttonhidealatkerja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listserahterima"
+                    android:layout_width="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/empty1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Belum ada data"
+                    android:textColor="#000000" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List Dokumen Hardcopy"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/buttonshowhardcopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_down" />
+
+                    <ImageButton
+                        android:id="@+id/buttonhidehardcopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listhardcopy"
+                    android:layout_width="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/empty2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Belum ada data"
+                    android:textColor="#000000" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List Dokumen Softcopy"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/buttonshowsoftcopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textSize="15dp"
+                    app:srcCompat="@drawable/arrow_down" />
+
+                <ImageButton
+                    android:id="@+id/buttonhidesoftcopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textSize="15dp"
+                    app:srcCompat="@drawable/arrow_right" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listsoftcopy"
+                    android:animateLayoutChanges="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/empty3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Belum ada data"
+                    android:textColor="#000000" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List Project"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/buttonshowproject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textSize="15dp"
+                    app:srcCompat="@drawable/arrow_down" />
+
+                    <ImageButton
+                        android:id="@+id/buttonhideproject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:textSize="15dp"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listproject"
+                    android:layout_width="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/empty4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Belum ada data"
+                    android:textColor="#000000" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List SDM"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/buttonshowsdm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textSize="15dp"
+                    app:srcCompat="@drawable/arrow_down" />
+
+                <ImageButton
+                    android:id="@+id/buttonhidesdm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textSize="15dp"
+                    app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/listsdm"
+                    android:animateLayoutChanges="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/empty5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Belum ada data"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearLayout6list"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/quest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Apakah anda menyetujui pengajuan serah terima tersebut ?"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/opsi"
+                        android:layout_width="337.4649dp"
+                        android:layout_height="59.0463dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/opsi_remake" />
+
+
+                    <RadioGroup
+                        android:id="@+id/option"
+                        android:layout_width="245dp"
+                        android:layout_height="29dp"
+                        android:layout_alignStart="@+id/opsi"
+                        android:layout_alignLeft="@+id/opsi"
+                        android:layout_alignTop="@+id/opsi"
+                        android:layout_alignEnd="@+id/opsi"
+                        android:layout_alignRight="@+id/opsi"
+                        android:layout_alignBottom="@+id/opsi"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="14dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/diterima"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-6dp"
+                            android:text="Approved"
+                            android:textSize="13dp" />
+
+                        <RadioButton
+                            android:id="@+id/tidakterima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Not Approved"
+                            android:textSize="13dp" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/approve"
+                android:layout_width="294dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/linearLayout5"
+                android:src="@drawable/btn_ok"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".izinfull">
+    <TextView
+        android:id="@+id/txt_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp"
+        android:text="lokasi" />
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text = "Izin Full Day"
+        />
+    <Button
+        android:id="@+id/list_data_izin_full_day"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/menu"
+        android:text="list data" />
+
+    <ImageButton
+        android:id="@+id/sakit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:scaleType="fitXY"
+        android:src="@drawable/rs"
+        android:textSize="45dp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sakit"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="1dp"
+        android:text="Sakit"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/cdt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="160dp"
+        android:layout_toRightOf="@+id/sakit"
+        android:background="#ffffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        android:src="@drawable/nonfullday"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdt"
+        android:layout_alignEnd="@+id/cdt"
+        android:layout_alignRight="@+id/cdt"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="CDT"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+</RelativeLayout>

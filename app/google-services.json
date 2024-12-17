@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "398615389533",
+    "project_id": "mobile-eis-tvip",
+    "storage_bucket": "mobile-eis-tvip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398615389533:android:ad3af219f68750fc4ef4b4",
+        "android_client_info": {
+          "package_name": "com.tvip.eis2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398615389533-it69ktk6k1a7gf90jp3sh1nr88o62sp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn6Qpd2CTIZ8thx6AYuSj5Eq6xAm5DlWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398615389533-it69ktk6k1a7gf90jp3sh1nr88o62sp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

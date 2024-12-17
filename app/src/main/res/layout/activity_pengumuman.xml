@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengumuman">
+    <TextView
+        android:id="@+id/selamatdatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/v_flipper"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="27dp"
+        android:gravity="center"
+        android:text="Selamat Datang \n Informasi Berlanjut dengan di klik"
+        android:textSize="20dp" />
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_flipper"
+        android:layout_toRightOf="@id/previousbutton"
+        android:layout_marginLeft="60dp"
+        android:text="next" />
+
+    <Button
+        android:id="@+id/previousbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_flipper"
+        android:layout_marginLeft="60dp"
+        android:text="Previous" />
+    
+</RelativeLayout>

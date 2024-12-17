@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="jabatan              "
+            android:textSize="10dp"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/jabatansdm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="jabatan"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Jumlah              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/jumlah_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="jumlah"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Jenis Kelamin              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/jenis_kelamin_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="jenis_kelamin_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Promosi              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/promosi_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="promosi_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Mutasi              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/mutasi_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="mutasi_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Demosi              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/demosi_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="demosi_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Surat Peringatan 1              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sp1_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="sp1_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Surat Peringatan 2              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sp2_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="sp2_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Surat Peringatan 3              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sp3_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="sp3_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Keterangan              "
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=":"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/keterangan_sdm"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:text="keterangan_sdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

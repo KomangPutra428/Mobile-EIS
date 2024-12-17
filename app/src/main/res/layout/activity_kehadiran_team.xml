@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".kehadiran_team">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- The ActionBar displayed at the top -->
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- The main content view where fragments are loaded -->
+            <FrameLayout
+                android:id="@+id/flContent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/absensipersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Laporan Absensi Team"
+            android:textColor="#333"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/namaedit"
+            android:layout_width="315.4649dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="0dp"
+            android:focusable="false"
+            android:fontFamily="@font/segoeuil"
+            android:includeFontPadding="false"
+            android:longClickable="false"
+            android:textColor="#333"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:text="Nama"
+            android:textColor="#333"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/namaedit"
+            app:layout_constraintTop_toBottomOf="@+id/absensipersonal"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <EditText
+            android:id="@+id/periodeedit"
+            android:layout_width="315.4649dp"
+            android:fontFamily="@font/segoeuil"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="0dp"
+            android:foregroundGravity="center_horizontal"
+            android:focusable="false"
+            android:includeFontPadding="false"
+            android:longClickable="false"
+            android:textColor="#333"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tanggalperiode"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tanggalperiode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:text="Periode"
+            android:textColor="#333"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/periodeedit"
+            app:layout_constraintTop_toBottomOf="@+id/namaedit"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/tanggalawal"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dari_tanggal"
+            android:focusable="false"
+            android:longClickable="false"
+            android:paddingLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/periodeedit"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/tambah"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_tambah"
+            app:layout_constraintBottom_toBottomOf="@+id/tanggalawal"
+            app:layout_constraintEnd_toEndOf="@+id/tanggalawal"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="@+id/tanggalawal"
+            app:layout_constraintTop_toTopOf="@+id/tanggalawal"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <EditText
+            android:id="@+id/tanggalakhir"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:background="@drawable/sampai_tanggal"
+            android:focusable="false"
+            android:layout_marginTop="10dp"
+            android:longClickable="false"
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tanggalawal"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toStartOf="@+id/tanggalawal"
+            app:layout_constraintTop_toBottomOf="@+id/tanggalawal"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/hapus"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/btn_erase"
+            app:layout_constraintBottom_toBottomOf="@+id/tanggalakhir"
+            app:layout_constraintEnd_toEndOf="@+id/tanggalakhir"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="@+id/tanggalakhir"
+            app:layout_constraintTop_toTopOf="@+id/tanggalakhir"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="337.4649dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/tanggalakhir"
+            app:layout_constraintVertical_bias="0.0">
+        </ListView>
+
+
+        <ImageButton
+            android:id="@+id/ceklihat"
+            android:layout_width="337.5dp"
+            android:layout_height="55.401dp"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_lihat_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/list"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/list"
+            app:layout_constraintTop_toBottomOf="@+id/list"
+            app:layout_constraintVertical_bias="0.137" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

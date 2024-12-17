@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eis2.riwayat">
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text = "Menu Riwayat Mutasi dan Project"
+        />
+
+    <ImageButton
+        android:id="@+id/project"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="45dp"
+        android:background="#ffffff"
+        android:scaleType="fitXY"
+        android:src="@drawable/project"
+        android:textSize="20dp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project"
+        android:layout_alignEnd="@+id/project"
+        android:layout_alignRight="@+id/project"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-27dp"
+        android:layout_marginRight="-27dp"
+        android:gravity="center"
+        android:text="Riwayat \n Karyawan Project"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/mutasi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="160dp"
+        android:layout_toEndOf="@+id/project"
+        android:layout_toRightOf="@+id/project"
+        android:background="#ffffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        android:src="@drawable/approval"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mutasi"
+        android:layout_alignStart="@+id/mutasi"
+        android:layout_alignLeft="@+id/mutasi"
+        android:layout_alignEnd="@+id/mutasi"
+        android:layout_alignRight="@+id/mutasi"
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginRight="-14dp"
+        android:gravity="center"
+        android:text="Riwayat \nMutasi/Rotasi"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+</RelativeLayout>

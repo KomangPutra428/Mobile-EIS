@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".absenmanual">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/nopengajuan"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="95dp"
+            android:longClickable="false"
+            android:hint="nomor pengajuan"
+            android:textColor="#000000"
+            android:selectAllOnFocus="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/absenmanual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Absen Manual"
+            android:textColor="#333"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/absenmanual"
+            android:text="Note : Approval berlaku 1x24 jam mohon konfirmasi ke atasan"
+            android:textColor="#333"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="10dp"
+            android:textStyle="bold|italic"
+            />
+
+        <com.example.eis2.SearchSpinner.SearchableSpinner
+            android:id="@+id/lokasi"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txt_lokasi_inter"
+            android:layout_below="@id/announcement"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/opsi"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/opsi_cdt"
+            android:layout_below="@+id/lokasi"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/option"
+            android:layout_width="246dp"
+            android:layout_height="38dp"
+            android:layout_alignStart="@+id/opsi"
+            android:layout_alignLeft="@+id/opsi"
+            android:layout_alignTop="@+id/opsi"
+            android:layout_alignEnd="@+id/opsi"
+            android:layout_alignRight="@+id/opsi"
+            android:layout_alignBottom="@+id/opsi"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/in"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="IN"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.604" />
+
+            <RadioButton
+                android:id="@+id/out"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="OUT"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.756" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tanggal_absen"
+            android:clickable="true"
+            android:layout_below="@id/opsi"
+            android:focusable="false"
+            android:hint="tanggal"
+            android:inputType="datetime"
+            android:layout_centerHorizontal="true"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/waktu"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/waktu_absen"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tanggal"
+            android:paddingLeft="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="jam"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/keterangan"
+            android:layout_width="337.5dp"
+            android:layout_height="154.6803dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/keterangan"
+            android:lines="5"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_below="@id/waktu"
+            android:layout_centerHorizontal="true"  />
+
+        <ImageButton
+            android:id="@+id/pengajuan"
+            android:layout_width="337.5dp"
+            android:layout_height="55.401dp"
+            android:layout_below="@id/keterangan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_pengajuan" />
+
+    </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

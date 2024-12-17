@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_kontrakkaryawan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".list_gratifikasi">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#0F4C81"
+                app:navigationIcon="@drawable/navigasi"
+                android:layout_height="56dp"
+                app:title="List Gratifikasi"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="List Gratifikasi"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="#0F4C81"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageButton
+                        android:id="@+id/filter"
+                        android:scaleType="fitCenter"
+                        android:layout_centerVertical="true"
+                        android:layout_width="30dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/more_vert"/>
+                </RelativeLayout>
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ListView
+            android:id="@+id/list_gratifikasi"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tool"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

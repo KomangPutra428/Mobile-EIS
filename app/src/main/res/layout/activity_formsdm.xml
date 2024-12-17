@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".formsdm">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sdm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sumber Daya Manusia"
+                    android:textColor="#333"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jabatan"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/sdm"
+                    >
+
+                    <EditText
+                        android:id="@+id/jabatanedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Jabatan"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jumlah"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/jabatan"
+                    >
+
+                    <EditText
+                        android:id="@+id/jumlahedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="jumlah"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jeniskelamin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/jumlah"
+                    >
+
+                    <EditText
+                        android:id="@+id/jeniskelaminedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Jenis Kelamin"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/promosi"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/jeniskelamin"
+                    >
+
+                    <EditText
+                        android:id="@+id/promosinedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Promosi"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mutasi"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/promosi"
+                    >
+
+                    <EditText
+                        android:id="@+id/mutasiedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Mutasi"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/demosi"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/mutasi"
+                    >
+
+                    <EditText
+                        android:id="@+id/demosiedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Demosi"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/suratperingatan1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/demosi"
+                    >
+
+                    <EditText
+                        android:id="@+id/suratperingatan1edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Surat Peringatan 1"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/suratperingatan2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/suratperingatan1"
+                    >
+
+                    <EditText
+                        android:id="@+id/suratperingatan2edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Surat Peringatan 2"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/suratperingatan3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/suratperingatan2"
+                    >
+
+                    <EditText
+                        android:id="@+id/suratperingatan3edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Surat Peringatan 3"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/keterangan"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:layout_below="@+id/suratperingatan3"
+                    >
+
+                    <EditText
+                        android:id="@+id/keteranganedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="154.6803dp"
+                        android:gravity="top|start"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Keterangan"
+                        android:textSize="14dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/keterangan"
+                    android:layout_width="336dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/batal"
+                        android:layout_width="162dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rounded_corner"
+                        android:backgroundTint="#D4D4D4"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:text="Batal"
+                        android:textAllCaps="false"
+                        android:textColor="#0F4C81"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/simpan"
+                        android:layout_width="152dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/rounded_corner"
+                        android:backgroundTint="#0F4C81"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:text="Simpan"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,138 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/listItem"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/absen"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text="Absen"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text="Lokasi"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Waktu F1/F4"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ket"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text="Ket."
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/in"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text="IN"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+        <TextView
+            android:textColor="#000000"
+            android:text="Lokasi Berangkat"
+            android:gravity="center"
+            android:id="@+id/depof1"
+            android:layout_width="87dp"
+            android:layout_height="15dp"
+            android:textSize="10dp"/>
+        <TextView
+            android:textColor="#000000"
+            android:text="Berangkat"
+            android:gravity="center"
+            android:id="@+id/f1"
+            android:layout_width="109dp"
+            android:layout_height="15dp"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/telat"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="telat"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text="OUT"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+        <TextView
+            android:textColor="#000000"
+            android:text="Lokasi Pulang"
+            android:gravity="center"
+            android:id="@+id/depof4"
+            android:layout_width="87dp"
+            android:layout_height="15dp"
+            android:textSize="10dp"/>
+        <TextView
+            android:textColor="#000000"
+            android:text="Pulang"
+            android:gravity="center"
+            android:id="@+id/f4"
+            android:layout_width="109dp"
+            android:layout_height="15dp"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

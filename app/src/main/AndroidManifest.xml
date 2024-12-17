@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.eis2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_NETWORK_USAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".list_gratifikasi"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gratifikasi"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".menu_gratifikasi"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".form_cuti_tahunan_hr"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".approval_cuti_tahunan_HR"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".form_mutasi_manager"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".approval_mutasi_manager"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".form_ptk_cancel"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".form_ptk_manager"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".approval_ptk_manager"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".daily_activity_snd.market_insight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".daily_activity_snd.saved_dailyactivity_new"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".daily_activity_snd.weekly_planner_new"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".data_pendidikan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".data_keluarga"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".data_detail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".data_induk"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_kontrakkaryawan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_pembinaan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manu_profil"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_plan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_daily"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".realization_plan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".saved_dailyactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weekly_planner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dailyactivity_sales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_covid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pengajuan_vaksin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_vaksin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".revisi_onoff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_teamt_revisi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hasil_assessment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_selfassesment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_selfassesment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_serahterima"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_serahterima"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".resign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".alasanexit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sarandanmasukanexit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".soalexitinterview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_exitinterview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_interview_karyawan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_tmp_refund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clearancesheet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formsdm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listsdm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formproject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listdokumenproject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formsoftcopy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listdokumensoftcopy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formhardcopy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listdokumenhardcopy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formalatkerja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listalatkerja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formserahterima"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".serahterima"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_soal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_kuisioner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting_cuti"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".update_ba"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_ba"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_refund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_refund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_refund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_slipgaji"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_resign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_resign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_resign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pengajuan_resign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_resign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listtmp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_onoff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onoff_team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".revisionoff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createonff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buatonoff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".domestic_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_ptk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_ojt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pemenuhankaryawan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_ptk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_ptk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listptks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".formpengajuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuptk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".checklistmenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menudaily"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dailyactivityspv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dailyactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kalendar_event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".campaign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_absenmanual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_absenmanual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_absen_manual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_wop_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_pengembalianseragam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pengembalian_seragam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pdfview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_expired"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_cm_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_am_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_spvretail_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_karyawan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_spvretail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_cm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_am"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt_wop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ojt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_interview_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".history_interview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".jadwalinterview_7days"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ubahjadwal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tambahjadwal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rekomendasikaryawan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_interview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".jadwalinterview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_interview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ketentuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pelanggaran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kontrakkaryawan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".absen_mobile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lainnya"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menucutikhusus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menucutitahunan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menudinasnonfullday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menudinasfullday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuizinnonfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuizinfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qrpassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qrscanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listpengajuanseragam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pengajuan_seragam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".seragam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listdepo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_mutasi"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_mutasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_sk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".history_mutasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listkaryawanproject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".list_suratketerangan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".riwayat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu_mutasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".karyawan_project"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_shift"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shifting_team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mutasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spv_surat_keterangan_kerja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rangeshift"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createshift"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".revisishift"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buatshift"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spv_shifting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shifting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".suratketerangan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rekapcuti"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rekapabsensi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti_khusus_yes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_cuti_tahunan"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_cuti_khusus"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti_tahunan_yes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti_tahunan_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti_khusus_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti_khusus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti_tahunan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_cuti"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_dinas_nonfull"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas_nonfull_yes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas_nonfull_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas_nonfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_dinas_full"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas_full_yes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas_full_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas_full"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_dinas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dinasfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dinasnonfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dinasnonfullday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dinasfullday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dinas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nonfull_yesapprove"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nonfull_noapprove"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_nonfull"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_nonfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fullday_yesapproved"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fullday_noapproved"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".form_fullday"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_fullday"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".detail_absensi_team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kehadiran_team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".absensi_team"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spv_absensi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval_izin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabel_izin_cdt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detail_absensi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabel_izin_non_full_day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabel_cuti_khusus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabel_cuti_tahunan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabel_absen_manual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".izinfull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".absenmanual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cutitahunan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cutikhusus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biodata"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".izinnonfullday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".izinfullday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pengumuman"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kontak_hr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cuti"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sakit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kehadiran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".izin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".firebase.checking_foreground"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".firebase.MyFirebaseServices"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="101" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/icon" />
+        </service>
+
+        <receiver
+            android:name=".Item.Restarter"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="RestartService" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

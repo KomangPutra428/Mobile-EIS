@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".listdepo">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- The ActionBar displayed at the top -->
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- The main content view where fragments are loaded -->
+            <FrameLayout
+                android:id="@+id/flContent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/menudepo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="List Depo"
+            android:textColor="#333"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/announcement"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Pilih lokasi depo / pool"
+            android:textColor="#333"
+            android:textSize="10dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menudepo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TableLayout
+            android:id="@+id/cabang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/announcement"
+            app:layout_constraintHorizontal_bias="0.550"
+            app:layout_constraintStart_toStartOf="@+id/announcement"
+            app:layout_constraintTop_toBottomOf="@+id/announcement"
+            app:layout_constraintVertical_bias="0.039">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/alam_sutra"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/alam_sutra" />
+
+                <ImageButton
+                    android:id="@+id/balaraja"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/balaraja" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/bintaro"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bintaro" />
+
+                <ImageButton
+                    android:id="@+id/cikokol"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/cikokol" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/cirendeu"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirendeu" />
+
+                <ImageButton
+                    android:id="@+id/cinangka2"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/cinang" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/daan_mogot"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dan_mogot" />
+
+                <ImageButton
+                    android:id="@+id/depok"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/depok" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/kalibata"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/kalibata" />
+
+                <ImageButton
+                    android:id="@+id/kedoya"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/kedoya" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/kelapa_dua"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kelapa" />
+
+                <ImageButton
+                    android:id="@+id/lt_agung"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/lenteng_agung" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/lodan"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lodan" />
+
+                <ImageButton
+                    android:id="@+id/manis"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/manis" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/pluit"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pluit" />
+
+                <ImageButton
+                    android:id="@+id/pandegelang"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/pandegelang" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/serang"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/serang" />
+
+                <ImageButton
+                    android:id="@+id/cikuda"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/cikuda" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="101dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start">
+                <ImageButton
+                    android:id="@+id/rancamaya"
+                    android:layout_width="160dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/rancamaya" />
+            </TableRow>
+
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

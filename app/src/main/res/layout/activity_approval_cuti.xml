@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".approval_cuti">
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text = "Approval Cuti"
+        />
+    <ImageButton
+        android:id="@+id/tahunan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="160dp"
+        android:background="#ffffff"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/iconcutitahunan"
+        android:textSize="45dp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tahunan"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="Approval \nCuti Tahunan"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/khusus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="160dp"
+        android:layout_toRightOf="@+id/tahunan"
+        android:background="#ffffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconcutikhusus"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/khusus"
+        android:layout_alignEnd="@+id/khusus"
+        android:layout_alignRight="@+id/khusus"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:gravity="center"
+        android:text="Approval \nCuti Khusus"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/counttahunan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginLeft="100dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/countkhusus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/counttahunan"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="45dp" />
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_profil"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF7FF"
+    tools:context=".biodata">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/persiapanbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#EDF7FF"
+                app:titleTextColor="#0F4C81"
+                app:navigationIcon="@drawable/navigasi"
+                android:layout_height="56dp"
+                app:title="Data Karyawan"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/persiapanbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/datainduk"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Data Induk"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/datadetail"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Data Detail"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/datakeluarga"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Data Keluarga"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/datapendidikan"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="20dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Data Pendidikan"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#4D4D4D"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/navigation" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

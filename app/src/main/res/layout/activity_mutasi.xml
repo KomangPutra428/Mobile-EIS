@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.mutasi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- The ActionBar displayed at the top -->
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- The main content view where fragments are loaded -->
+            <FrameLayout
+                android:id="@+id/flContent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="level"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nomorjabatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="nomor"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/levelawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="level"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nomorjabatanawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="nomor"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/formmutasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Form Mutasi dan Rotasi"
+            android:textColor="#333"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/nopengajuan"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="95dp"
+            android:hint="nomor pengajuan"
+            android:inputType="text"
+            android:longClickable="false"
+            android:textColor="#000000"
+            android:selectAllOnFocus="true"
+            android:visibility="invisible"/>
+
+        <com.example.eis2.SearchSpinner.SearchableSpinner
+            android:id="@+id/karyawan"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/txt_karyawan"
+            android:layout_below="@id/formmutasi"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/nik"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/nik_mutasi"
+            android:layout_below="@id/karyawan"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/nama_mutasi"
+            android:layout_below="@id/nik"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/pt"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/pt_mutasi"
+            android:layout_below="@id/nama"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/departement_mutasi"
+            android:layout_below="@id/pt"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/lokasi"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/lokasi_mutasi"
+            android:layout_below="@id/department"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/jab"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/jabatan_mutasi"
+            android:layout_below="@id/lokasi"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/permintaan"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/permintaan"
+            android:layout_below="@id/jab"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:id="@+id/option"
+            android:layout_width="301dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/permintaan"
+            android:layout_alignLeft="@+id/permintaan"
+            android:layout_alignTop="@+id/permintaan"
+            android:layout_alignEnd="@+id/permintaan"
+            android:layout_alignRight="@+id/permintaan"
+            android:layout_alignBottom="@+id/permintaan"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/promosi"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginRight="0dp"
+                android:text="PROMOSI"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioButton
+                android:id="@+id/demosi"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="16dp"
+                android:text="DEMOSI"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.756" />
+
+            <RadioButton
+                android:id="@+id/rotasi"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="18dp"
+                android:text="ROTASI"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.756" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/opsi"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="0dp"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/opsi_cdt"
+            android:layout_below="@id/option"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:id="@+id/opsipilihan"
+            android:layout_width="246dp"
+            android:layout_height="38dp"
+            android:visibility="gone"
+            android:layout_alignStart="@+id/opsi"
+            android:layout_alignLeft="@+id/opsi"
+            android:layout_alignTop="@+id/opsi"
+            android:layout_alignEnd="@+id/opsi"
+            android:layout_alignRight="@+id/opsi"
+            android:layout_alignBottom="@+id/opsi"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/panel"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="PANEL"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.604" />
+
+            <RadioButton
+                android:id="@+id/pjs"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="PLT"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/opsi"
+                app:layout_constraintEnd_toEndOf="@+id/opsi"
+                app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintStart_toStartOf="@+id/opsi"
+                app:layout_constraintTop_toTopOf="@+id/opsi"
+                app:layout_constraintVertical_bias="0.756" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rotasilayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/opsi"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone">
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/ptbaru"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/mutasi_pt"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/departmentbaru"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/ptbaru"
+                android:background="@drawable/department_baru"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/jabatanbaru"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/jabatan_baru"
+                android:layout_below="@id/departmentbaru"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/rekomendasi"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rekomendasi_tanggal"
+                android:layout_below="@id/jabatanbaru"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/lokasibaru"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/lokasi_baru"
+                android:layout_below="@id/rekomendasi"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/pengajuan"
+                android:layout_width="337.5dp"
+                android:layout_height="55.401dp"
+                android:layout_below="@id/lokasibaru"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_pengajuan" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

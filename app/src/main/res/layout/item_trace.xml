@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/statustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textColor="#000"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlTimeline"
+            android:layout_width="32dp"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/tvTopLine"
+                android:layout_width="2.5dp"
+                android:layout_height="29dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_dotted_line_vertical" />
+
+            <TextView
+                android:id="@+id/tvDot"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/tvTopLine"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/timelline_dot_normal" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tvDot"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_dotted_line_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="6dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:elevation="40dp"
+                android:background="#F6F6F6"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="keterangan"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tvAcceptTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="keterangan"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvAcceptStation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open"
+                        android:layout_below="@id/keterangan"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

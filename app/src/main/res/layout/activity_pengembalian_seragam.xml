@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.pengembalian_seragam">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- The ActionBar displayed at the top -->
+
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- The main content view where fragments are loaded -->
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/kodejabatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#333"
+                android:text = "long" />
+            <EditText
+                android:id="@+id/nopengajuan"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="95dp"
+                android:hint="nomor pengajuan"
+                android:inputType="text"
+                android:longClickable="false"
+                android:textColor="#000000"
+                android:selectAllOnFocus="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/formcdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Form Pengembalian Seragam"
+                android:textColor="#333"
+                android:textStyle="bold"
+                />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/keteranganpengajuan"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/keterangan_pengajuan"
+                android:layout_below="@id/formcdt"
+                android:layout_centerHorizontal="true"/>
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/karyawan"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_karyawan"
+                android:layout_below="@id/keteranganpengajuan"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_nik"
+                android:layout_below="@id/karyawan"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_nama"
+                android:layout_below="@id/nik"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/jabatan"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_jabatan"
+                android:layout_below="@id/nama"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/lokasi"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/kantor_cabangbaru"
+                android:layout_below="@id/jabatan"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/department"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_department"
+                android:layout_below="@id/lokasi"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/jenisseragam"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/jenis_seragam"
+                android:layout_below="@id/department"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/kode"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/kodeseragam_baru"
+                android:layout_below="@id/jenisseragam"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/qty"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/qty"
+                android:layout_below="@id/harga"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="337.4649dp"
+                android:layout_height="wrap_content"
+                android:text="Biaya Penggantian Seragam Baru Tidak Dapat Dikembalikan (Harga Satuan * Qty)"
+                android:layout_marginTop="10dp"
+                android:textColor="#DC143C"
+                android:justificationMode="inter_word"
+                android:layout_below="@id/kode"
+                android:textSize="12dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic" />
+            <EditText
+                android:id="@+id/harga"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:background="@drawable/harga_satuan"
+                android:hint="harga"
+                android:longClickable="false"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/note"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/tanggal"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/dari_tanggal"
+                android:layout_below="@id/qty"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/keterangan"
+                android:layout_width="337.5dp"
+                android:layout_height="154.6803dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="5dp"
+                android:lines="5"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:paddingTop="20dp"
+                android:background="@drawable/keterangan"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:layout_below="@id/tanggal"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/pengajuan"
+                android:layout_width="337.5dp"
+                android:layout_height="55.401dp"
+                android:layout_below="@id/keterangan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_pengajuan" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

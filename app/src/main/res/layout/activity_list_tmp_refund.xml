@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.list_tmp_refund">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- The ActionBar displayed at the top -->
+
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- The main content view where fragments are loaded -->
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/nopengajuan"
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="95dp"
+                    android:hint="nomor pengajuan"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:textColor="#000000"
+                    android:selectAllOnFocus="true"
+                    android:visibility="invisible"/>
+                <ImageButton
+                    android:id="@+id/history"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/absensiteam"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/draft"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.692"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/absensiteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Draft Refund"
+                    android:textColor="#333"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true" />
+
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="337.5dp"
+                    android:layout_height="505dp"
+                    android:background="@drawable/border"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_centerHorizontal="true"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_below="@+id/absensiteam"
+                    />
+
+                <LinearLayout
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/list"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/simpan"
+                        android:layout_width="162dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rounded_corner"
+                        android:backgroundTint="#D4D4D4"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:text="Simpan"
+                        android:textAllCaps="false"
+                        android:textColor="#0F4C81"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/tambah"
+                        android:layout_width="152dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="22dp"
+                        android:background="@drawable/rounded_corner"
+                        android:backgroundTint="#0F4C81"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:text="Tambah"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

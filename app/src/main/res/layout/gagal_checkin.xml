@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/info_warning"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Anda berada di luar radius"
+            android:layout_below="@+id/fotooutlet"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:text="Pilih alasan anda di luar radius"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C2C2C2"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/gagalscan"
+            android:layout_below="@+id/text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:endIconMode="dropdown_menu"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="#0F4C81">
+            <AutoCompleteTextView
+                android:id="@+id/alasangagalcheckin"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:focusable="false"
+                android:longClickable="false"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Alasan"
+                android:singleLine="true"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="442dp"
+                android:layout_marginBottom="15dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:visibility="visible"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/squared_corner"
+                android:backgroundTint="#FB4141"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Cancel"
+                android:layout_marginRight="8dp"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/squared_corner"
+                android:backgroundTint="#0F4C81"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

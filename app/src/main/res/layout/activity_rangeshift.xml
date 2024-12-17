@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eis2.rangeshift">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/pengajuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="32dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text = "INPUT SHIFT KARYAWAN RANGE" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pengajuan"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:text="Nama Karyawan"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/karyawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="-8dp"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:hint="nama karyawan" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="25dp"
+                android:text="NIK Karyawan"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="-94dp"
+                android:layout_marginLeft="-94dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="NIK Karyawan"
+                android:longClickable="false"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nik"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7dp"
+                android:text="Nama Karyawan"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginStart="-108dp"
+                android:layout_marginLeft="-108dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Nama Karyawan"
+                android:longClickable="false"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Jabatan"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:text="nomorjabatan"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/jabatan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginStart="-53dp"
+                android:layout_marginLeft="-53dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="jabatan"
+                android:longClickable="false"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jabatan"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7dp"
+                android:text="Departement"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/departement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_marginStart="-54dp"
+                android:layout_marginLeft="-54dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="departement"
+                android:longClickable="false"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/departement"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7dp"
+                android:text="Lokasi"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/lokasi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginStart="-53dp"
+                android:layout_marginLeft="-53dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="lokasi"
+                android:longClickable="false"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="69dp"
+                android:text="Mulai Tanggal"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/tanggalawal"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lokasi"
+                android:layout_alignEnd="@+id/lokasi"
+                android:layout_alignRight="@+id/lokasi"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="148dp"
+                android:layout_marginRight="148dp"
+                android:layout_toEndOf="@+id/textView13"
+                android:layout_toRightOf="@+id/textView13"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="tanggal"
+                android:inputType="datetime"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lokasi"
+                android:layout_alignStart="@+id/tanggalakhir"
+                android:layout_alignLeft="@+id/tanggalakhir"
+                android:layout_marginStart="-31dp"
+                android:layout_marginLeft="-31dp"
+                android:layout_marginTop="22dp"
+                android:text="S/D"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/tanggalakhir"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lokasi"
+                android:layout_alignEnd="@+id/lokasi"
+                android:layout_alignRight="@+id/lokasi"
+                android:layout_marginStart="141dp"
+                android:layout_marginLeft="141dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/textView13"
+                android:layout_toRightOf="@+id/textView13"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="tanggal"
+                android:inputType="datetime"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginRight="46dp"
+                android:layout_toStartOf="@+id/jam"
+                android:layout_toLeftOf="@+id/jam"
+                android:text="Pilih Jam"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/jam"
+                android:layout_width="166dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/textView15"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:hint="Jam" />
+
+            <Button
+                android:id="@+id/pengajuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_below="@+id/jam"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:text="Pengajuan" />
+
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lokasi"
+                android:layout_alignEnd="@+id/pengajuan2"
+                android:layout_alignRight="@+id/pengajuan2"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="-58dp"
+                android:layout_marginRight="-58dp"
+                android:layout_toEndOf="@+id/pengajuan2"
+                android:layout_toRightOf="@+id/pengajuan2"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tanggalakhir"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="-75dp"
+                android:layout_marginRight="-75dp"
+                android:layout_toEndOf="@+id/jam"
+                android:layout_toRightOf="@+id/jam"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

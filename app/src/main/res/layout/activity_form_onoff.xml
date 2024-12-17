@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.form_onoff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- The ActionBar displayed at the top -->
+
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- The main content view where fragments are loaded -->
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/formcdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Edit Sabtu On Off Karyawan"
+                android:textColor="#333"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="nomorjabatan"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_nik"
+                android:layout_below="@id/formcdt"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_nama"
+                android:layout_below="@id/nik"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/jabatan"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_jabatan"
+                android:layout_below="@id/nama"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/department"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_department"
+                android:layout_below="@id/jabatan"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/lokasi"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_lokasi"
+                android:layout_below="@id/department"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/mulaitanggal"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_field_tanggal_shift"
+                android:layout_below="@id/lokasi"
+                android:clickable="true"
+                android:focusable="false"
+                android:inputType="datetime"
+                android:selectAllOnFocus="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/jamkerja"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/txt_field_jam_kerja"
+                android:layout_below="@id/mulaitanggal"
+                android:clickable="true"
+                android:visibility="gone"
+                android:focusable="false"
+                android:inputType="datetime"
+                android:selectAllOnFocus="true"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.eis2.SearchSpinner.SearchableSpinner
+                android:id="@+id/jam"
+                android:layout_width="337.4649dp"
+                android:layout_height="59.0463dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editjam"
+                android:layout_below="@id/jamkerja"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/pengajuan"
+                android:layout_width="337.5dp"
+                android:layout_height="55.401dp"
+                android:layout_below="@id/jam"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_simpan" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

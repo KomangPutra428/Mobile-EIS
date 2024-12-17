@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".formpengajuan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/nopengajuan"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView1"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="95dp"
+                android:hint="nomor pengajuan"
+                android:inputType="text"
+                android:longClickable="false"
+                android:textColor="#000000"
+                android:selectAllOnFocus="true"
+                android:visibility="invisible"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/judultext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="Form Permintaan Tenaga Kerja"
+                    android:textColor="#333"
+                    android:textStyle="bold"
+                    />
+
+                <com.example.eis2.SearchSpinner.SearchableSpinner
+                    android:id="@+id/jabatan"
+                    android:layout_width="337.4649dp"
+                    android:layout_height="59.0463dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/pilihjabatan"
+                    android:layout_below="@id/judultext"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <com.example.eis2.SearchSpinner.SearchableSpinner
+                    android:id="@+id/lokasi"
+                    android:layout_width="337.4649dp"
+                    android:layout_height="59.0463dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/lokasi_baru"
+                    android:layout_below="@id/jabatan"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <com.example.eis2.SearchSpinner.SearchableSpinner
+                    android:id="@+id/departement"
+                    android:layout_width="337.4649dp"
+                    android:layout_height="59.0463dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/department_baru"
+                    android:layout_below="@id/lokasi"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <com.example.eis2.SearchSpinner.SearchableSpinner
+                    android:id="@+id/analisa"
+                    android:layout_width="337.4649dp"
+                    android:layout_height="59.0463dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:entries="@array/analisa"
+                    android:background="@drawable/analisakebutuhan"
+                    android:layout_below="@id/departement"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <com.example.eis2.SearchSpinner.SearchableSpinner
+                    android:id="@+id/penyediaan"
+                    android:layout_width="337.4649dp"
+                    android:layout_height="59.0463dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:entries="@array/penyedia"
+                    android:background="@drawable/analisa2"
+                    android:layout_below="@id/analisa"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/pengajuan"
+                    android:layout_width="337.5dp"
+                    android:layout_height="55.401dp"
+                    android:layout_below="@id/penyediaan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@null"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_pengajuan" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.hasil_assessment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/nama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nama3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/selfassesment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:text="Self Assessment Risiko COVID-19"
+                android:textColor="#333"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardkehadiran"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/selfassesment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="30dp"
+                            android:text="Terima kasih, berikut score hasil assessment resiko Covid-19 hari ini :"
+                            android:textColor="#212121"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kalendarlenar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="#212121"
+                            android:textSize="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/keterangan"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/cardkehadiran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/linearresiko"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:id="@+id/resiko"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="#212121"
+                    android:textSize="10dp" />
+                <TextView
+                    android:id="@+id/keteranganresiko"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="#212121"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tambahan"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tambahan : "
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:id="@+id/tekstambahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textColor="#212121"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="337.4649dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

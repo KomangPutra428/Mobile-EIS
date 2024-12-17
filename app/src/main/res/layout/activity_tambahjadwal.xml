@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.eis2.tambahjadwal">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/forminterview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:text="Atur Jadwal Kandidat"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/constrainnama"
+            android:layout_below="@id/forminterview"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="Nama"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="315.4649dp"
+                android:layout_height="40dp"
+                android:paddingLeft="0dp"
+                android:focusable="false"
+                android:fontFamily="@font/segoeuil"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/constrainktp"
+            android:layout_below="@id/constrainnama"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ktp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor KTP"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/noktp"
+                android:layout_width="315.4649dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ktp"
+                android:paddingLeft="0dp"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:fontFamily="@font/segoeuil"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/constrainposisi"
+            android:layout_below="@id/constrainktp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/posisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/seguisb"
+                android:text="Posisi Pekerjaan"
+                android:gravity="center"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/position"
+                android:layout_width="315.4649dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:paddingLeft="0dp"
+                android:fontFamily="@font/segoeuil"
+                android:includeFontPadding="false"
+                android:longClickable="false"
+                android:textColor="#333"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tanggaledit"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/constrainposisi"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:background="@drawable/txt_thl_inter"
+            android:fontFamily="@font/segoeuil"
+            android:includeFontPadding="false"
+            android:longClickable="false"
+            android:textColor="#333"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editjam"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@+id/tanggaledit"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:background="@drawable/text_waktu_inter"
+            android:fontFamily="@font/segoeuil"
+            android:includeFontPadding="false"
+            android:longClickable="false"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#333"
+            android:textSize="20dp" />
+
+        <com.example.eis2.SearchSpinner.SearchableSpinner
+            android:id="@+id/pilihdepo"
+            android:layout_width="337.4649dp"
+            android:layout_height="59.0463dp"
+            android:layout_below="@id/editjam"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/txt_lokasi_inter" />
+
+        <LinearLayout
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/pilihdepo">
+
+        <ImageButton
+            android:id="@+id/simpan"
+            android:layout_width="152dp"
+            android:layout_height="51dp"
+            android:background="@drawable/btn_simpan_inter"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY" />
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="152dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_reset_inter"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+             />
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="337.4649dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

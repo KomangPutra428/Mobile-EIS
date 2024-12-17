@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Title"
+        android:textSize="16sp"
+        android:textColor="#FF0000" /> <!-- Set your desired text color here -->
+
+    <TextView
+        android:id="@+id/notificationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Message"
+        android:textSize="14sp"
+        android:textColor="#000000" /> <!-- Set your desired text color here -->
+</LinearLayout>

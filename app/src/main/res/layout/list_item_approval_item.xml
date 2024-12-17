@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/listItem"
+    android:orientation="horizontal">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stretchColumns="*" >
+        <TableRow>
+            <TextView
+                android:textColor="#000000"
+                android:text="ID SK"
+                android:gravity="center"
+                android:id="@+id/id"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="NO"
+                android:gravity="center"
+                android:id="@+id/pengajuan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="NIK"
+                android:gravity="center"
+                android:id="@+id/nik"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="nama"
+                android:gravity="center"
+                android:id="@+id/nama"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Jenis Keperluan"
+                android:gravity="center"
+                android:id="@+id/keperluan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Analisa Kebutuhan"
+                android:gravity="center"
+                android:maxLength="10"
+                android:id="@+id/kebutuhan"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Status Atasan"
+                android:gravity="center"
+                android:id="@+id/status"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000000"
+                android:text="Status HRD"
+                android:gravity="center"
+                android:id="@+id/status2"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_datainduk"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daily_activity_snd.market_insight">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/datainduk_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                app:titleTextColor="#0F4C81"
+                android:layout_height="56dp"
+                app:title="Market Insight"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearbutton"
+            android:layout_below="@+id/datainduk_bar"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Market Activity"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/text_market_daily"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="top"
+                        android:hint="Isi Market Daily"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        tools:layout_editor_absoluteX="41dp"
+                        tools:layout_editor_absoluteY="442dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Competitor Activity"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+
+                <CheckBox
+                    android:id="@+id/checkCompetitor"
+                    android:text="TIDAK ADA KOMPETITOR"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinput_brand"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Pilih Brand"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/otherLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/otherCompetitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Isi Kompetitor"
+                        android:inputType="textCapCharacters"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sku_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_sku"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="SKU"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/qty_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/edit_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Penjualan toko Per Minggu"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:endIconMode="clear_text"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/edit_harganormal"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Harga Beli Normal per unit/box"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:endIconMode="clear_text"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/edit_diskon"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Diskon"
+                        android:maxLength="11"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:endIconMode="clear_text"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/edit_cashback"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:maxLength="11"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Cashback"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#757575"
+                        android:text="Harga beli net:"/>
+
+                    <TextView
+                        android:id="@+id/hargabeli"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#0A0A0A"
+                        android:text="Rp0"/>
+
+                </RelativeLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:endIconMode="clear_text"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <EditText
+                        android:id="@+id/edit_hargajual"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Harga Jual per unit/box"
+                        android:maxLength="11"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#757575"
+                        android:text="Margin : "/>
+
+                    <TextView
+                        android:id="@+id/margin"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#0A0A0A"
+                        android:text="Rp0"/>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback Permintaan Dan Pelayanan"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    app:endIconMode="dropdown_menu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="28dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Feedback Permintaan Dan Pelayanan"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback Promo Dan Harga"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    app:endIconMode="dropdown_menu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="28dp"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/feedback_pelayanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Feedback Promo Dan Harga"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback Issue Market Outlet"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="28dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:hint="Feedback Issue Market Outlet"> <!-- Set the hint here -->
+
+                    <AutoCompleteTextView
+                        android:id="@+id/feedback_outlet"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" /> <!-- Change from "dp" to "sp" for textSize -->
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penjualan Aqua/Vit Minggu Lalu"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:hint="Penjualan Aqua/Vit"> <!-- Set the hint here -->
+                    <AutoCompleteTextView
+                        android:id="@+id/aqua_minggu"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" /> <!-- Change from "dp" to "sp" for textSize -->
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="28dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:hint="Alasan"> <!-- Set the hint here -->
+                    <AutoCompleteTextView
+                        android:id="@+id/aqua_minggu_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" /> <!-- Change from "dp" to "sp" for textSize -->
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penjualan Kompetitor Minggu Lalu"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#0A0A0A"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:hint="Penjualan Kompetitor"> <!-- Set the hint here -->
+                    <AutoCompleteTextView
+                        android:id="@+id/kompetitor_minggu"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" /> <!-- Change from "dp" to "sp" for textSize -->
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pilihan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="28dp"
+                    app:endIconMode="dropdown_menu"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="#0F4C81"
+                    android:hint="Alasan"> <!-- Set the hint here -->
+                    <AutoCompleteTextView
+                        android:id="@+id/kompetitor_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" /> <!-- Change from "dp" to "sp" for textSize -->
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearbutton"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:cardElevation="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:background="#ffffff"
+                    android:padding="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/batal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:strokeWidth="1dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:backgroundTint="#ffffff"
+                        android:scaleType="fitXY"
+                        app:strokeColor="#0F4C81"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:text="Batal"
+                        android:textAllCaps="false"
+                        android:textColor="#0F4C81"
+                        android:textStyle="bold" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/simpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:strokeWidth="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#0F4C81"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:text="Simpan"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:background="@drawable/background_new3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main"
+        android:layout_gravity="start"
+        app:menu="@menu/activity_main_drawer" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
